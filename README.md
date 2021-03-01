@@ -8,6 +8,5 @@ You can represent songs (without rhythm) using a string of chars 'q' through 'y'
 
 For example, 'Mary Had A Little Lamb' is
 'ewqweeewwwerrewqweeeewwewq' 
-(press those keys to the tune of the song)
 
 ### Try it out [here](http://ichen2.github.io/qwerty-keyboard/index.html)!
