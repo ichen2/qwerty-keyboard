@@ -1,4 +1,4 @@
-const SCREEN_WIDTH = 1280;
+const SCREEN_WIDTH = 800;
 const SCREEN_HEIGHT = 800;
 const keys = [];
 const scale = ['C4', 'D4', 'E4', 'G4', 'A4', 'C5'];
@@ -21,6 +21,8 @@ function setup() {
   fill(255);
   Tone.start();
   synthSetup();
+  textSize(32);
+  text("Use QWERTY to play", 250, 60);
   for(note of scale) {
     new Key(note);
   }
@@ -29,6 +31,7 @@ function setup() {
 function keyPressed() {
   let degree = keycodes.findIndex(e => e == keyCode);
   if(degree > -1) {
+    keys[degree].button.elt.focus();
     play(scale[degree]);
   }
 }
