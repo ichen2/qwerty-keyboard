@@ -22,7 +22,8 @@ function setup() {
   Tone.start();
   synthSetup();
   textSize(32);
-  text("Use QWERTY to play", 250, 60);
+  text("Use the keys QWERTY to play", 170, 50);
+  text("the notes CDEGAC", 225, 85);
   for(note of scale) {
     new Key(note);
   }
