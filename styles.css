@@ -6,5 +6,5 @@ button {
 button:focus {
     border: none;
     outline: none;
-    background: grey;
+    background: lightgray;
 }
